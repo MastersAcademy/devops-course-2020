@@ -14,7 +14,7 @@
 | bohdan.bezpoyasniy    |  V   |      |
 | dmytro.pereiaslovets  |  V   |   V  |
 | dmytro.vakulenko      |      |      |
-| eugene.benkovskiy     |  V   |      |
+| eugene.benkovskiy     |  V   |   V  |
 | nataliia.homberh      |  V   |      |
 | jenia.tretiak         |  V   |      |
 | maksym.kolesnyk       |      |      |
