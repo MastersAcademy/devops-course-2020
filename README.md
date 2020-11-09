@@ -9,10 +9,10 @@
 |                       | HW 1 | HW 3 |
 | ---                   | ---  | ---  |
 | aleksandr.arabadzhy   |      |      |
-| alexey.boguslavets    |  V   |      |
+| alexey.boguslavets    |  V   |   V  |
 | bogdan.safronov       |  V   |      |
 | bohdan.bezpoyasniy    |  V   |      |
-| dmytro.pereiaslovets  |  V   |      |
+| dmytro.pereiaslovets  |  V   |   V  |
 | dmytro.vakulenko      |      |      |
 | eugene.benkovskiy     |  V   |      |
 | nataliia.homberh      |  V   |      |
