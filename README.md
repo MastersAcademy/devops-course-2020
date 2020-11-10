@@ -20,10 +20,10 @@
 | maksym.kolesnyk       |      |      |
 | michael.pereverov     |      |   V  |
 | pavlo.ovcharenko      |      |      |
-| pavlo.teslenko        |  V   |      |
+| pavlo.teslenko        |  V   |   V  |
 | ruslan.pistriak       |      |      |
 | sashka.datsenko       |  V   |   V  |
 | serhii.karavan        |  V   |      |
 | vitalii.kolesnyk      |      |      |
-| vladyslav.volkov      |  V   |      |
+| vladyslav.volkov      |  V   |   V  |
 | volodymyr.bezpalchuk  |  V   |   V  |
