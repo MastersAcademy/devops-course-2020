@@ -6,24 +6,24 @@
 3 не сданых работы приведет к тому что ваши реквесты будут закрываться автоматом без рассмотрения.
 Пока вы не нарушили этого правила доделывать и переписывать работы все еще можно :)
 
-|                       | HW 1 | HW 2 |
-| ---                   | ---  | ---  |
-| aleksandr.arabadzhy   |      |      |
-| alexey.boguslavets    |  V   |      |
-| bogdan.safronov       |  V   |      |
-| bohdan.bezpoyasniy    |  V   |      |
-| dmytro.pereiaslovets  |  V   |      |
-| dmytro.vakulenko      |      |      |
-| eugene.benkovskiy     |  V   |      |
-| nataliia.homberh      |  V   |      |
-| jenia.tretiak         |  V   |      |
-| maksym.kolesnyk       |      |      |
-| michael.pereverov     |      |      |
-| pavlo.ovcharenko      |      |      |
-| pavlo.teslenko        |  V   |      |
-| ruslan.pistriak       |      |      |
-| sashka.datsenko       |  V   |      |
-| serhii.karavan        |  V   |      |
-| vitalii.kolesnyk      |      |      |
-| vladyslav.volkov      |  V   |      |
-| volodymyr.bezpalchuk  |  V   |      |
+|                       | HW 1 | HW 3 | HW 4 |
+| ---                   | ---  | ---  | ---  |
+| aleksandr.arabadzhy   |      |      |      |
+| alexey.boguslavets    |  V   |   V  |      |
+| bogdan.safronov       |  V   |      |      |
+| bohdan.bezpoyasniy    |  V   |      |      |
+| dmytro.pereiaslovets  |  V   |   V  |      |
+| dmytro.vakulenko      |      |      |      |
+| eugene.benkovskiy     |  V   |   V  |      |
+| nataliia.homberh      |  V   |   V  |      |
+| jenia.tretiak         |  V   |      |      |
+| maksym.kolesnyk       |      |      |      |
+| michael.pereverov     |      |   V  |      |
+| pavlo.ovcharenko      |      |      |      |
+| pavlo.teslenko        |  V   |   V  |      |
+| ruslan.pistriak       |      |      |      |
+| sashka.datsenko       |  V   |   V  |      |
+| serhii.karavan        |  V   |      |      |
+| vitalii.kolesnyk      |      |      |      |
+| vladyslav.volkov      |  V   |   V  |      |
+| volodymyr.bezpalchuk  |  V   |   V  |      |
