@@ -3,5 +3,14 @@ FROM ubuntu:20.04
 RUN apt-get update && apt-get install -y wget build-essential zlib1g zlib1g-dev openssl libssl-dev libmysqlclient-dev libyaml-dev curl libpq-dev
 
 RUN wget http://ftp.ruby-lang.org/pub/ruby/2.6/ruby-2.6.0.tar.gz
-RUN tar -xzvf ruby-2.6.0.tar.gz && cd ruby-2.6.0 && ./configure && make install
-CMD ["ruby", "-v"]
+RUN tar -xzvf ruby-2.6.0.tar.gz && \
+    cd ruby-2.6.0 && \
+    ./configure --prefix=/usr   \
+                --enable-shared \
+                --docdir=/usr/share/doc/ruby-2.6.0 && \
+    make && \
+    make install
+
+COPY . /app
+
+CMD ["bash"]
