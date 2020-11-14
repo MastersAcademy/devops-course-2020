@@ -1,0 +1,3 @@
+https://hub.docker.com/repository/docker/bezpalchukv/ma.devops.bezpalchuk
+
+https://hub.docker.com/repository/docker/bezpalchukv/ma.devops.bezpalchuk.part2
