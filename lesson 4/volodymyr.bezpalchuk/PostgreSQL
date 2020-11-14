@@ -1,0 +1,22 @@
+FROM ubuntu:20.04
+
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+    apt-get install software-properties-common wget gpg gnupg -y
+
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 7FCC7D46ACCC4CF8    
+
+RUN add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main" && \
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - && \
+    apt-get update && \
+    apt-get install -y postgresql-9.6 postgresql-client-9.6
+
+USER postgres
+
+RUN echo "listen_addresses='*'" >> /etc/postgresql/9.6/main/postgresql.conf
+
+EXPOSE 5432
+
+VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
+
+CMD ["/usr/lib/postgresql/9.6/bin/postgres", "-D", "/var/lib/postgresql/9.6/main", "-c", "config_file=/etc/postgresql/9.6/main/postgresql.conf"]

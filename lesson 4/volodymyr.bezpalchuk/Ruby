@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get install -y wget build-essential zlib1g zlib1g-dev openssl libssl-dev libmysqlclient-dev libyaml-dev curl libpq-dev
+
+RUN wget http://ftp.ruby-lang.org/pub/ruby/2.6/ruby-2.6.0.tar.gz
+RUN tar -xzvf ruby-2.6.0.tar.gz && cd ruby-2.6.0 && ./configure && make install
+RUN gem install pg -v 0.18.4
+RUN gem install sinatra
+RUN gem install redis
+CMD ["ruby", "-v"]
