@@ -1,0 +1,3 @@
+https://hub.docker.com/repository/docker/mpereverov/ma.devops.pereverov
+
+docker pull mpereverov/ma.devops.pereverov:latest
