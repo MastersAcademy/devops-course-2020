@@ -21,7 +21,7 @@
 | maksym.kolesnyk       |      |      |      |      |
 | michael.pereverov     |  V   |   V  |   V  |      |
 | pavlo.ovcharenko      |      |      |      |      |
-| pavlo.teslenko        |  V   |   V  |      |      |
+| pavlo.teslenko        |  V   |   V  |      |  V   |
 | ruslan.pistriak       |      |      |      |      |
 | sashka.datsenko       |  V   |   V  |   V  |      |
 | serhii.karavan        |  V   |      |      |      |
