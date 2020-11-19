@@ -19,13 +19,13 @@ services:
     ports:
     - "5432:5432"
     environment:
-      POSTGRES_PASSWORD=password
+      POSTGRES_PASSWORD: password
 
   redis:
-    image: postgres
+    image: redis
     container_name: redis_test
     command: redis-server --requirepass password
     ports:
     - "6379:6379"
     environment:
-      REDIS_PASSWORD=password
+      REDIS_PASSWORD: password
