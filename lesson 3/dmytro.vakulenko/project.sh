@@ -73,6 +73,6 @@ docker run --rm -d \
   -e DB=${DB} \
   -e CACHE=${CACHE} \
   -p ${EXPOSE_PORT}:4567 \
-  --mount type=bind,source="${PROJECT_DIR}",target=/app \
+  --mount "${PROJECT_DIR}":/app \
   ruby:2.6.0 \
   ruby ./app/server.rb
