@@ -11,17 +11,17 @@
 | ---                   | ---  | ---  | ---  | ---  |
 | aleksandr.arabadzhy   |      |      |      |      |
 | alexey.boguslavets    |  V   |   V  |   V  |      |
-| bogdan.safronov       |  V   |      |      |      |
+| bogdan.safronov       |  V   |      |   V  |      |
 | bohdan.bezpoyasniy    |  V   |      |      |      |
 | dmytro.pereiaslovets  |  V   |   V  |   V  |      |
-| dmytro.vakulenko      |      |      |      |      |
+| dmytro.vakulenko      |  V   |      |      |      |
 | eugene.benkovskiy     |  V   |   V  |   V  |      |
 | nataliia.homberh      |  V   |   V  |   V  |      |
 | jenia.tretiak         |  V   |      |      |      |
 | maksym.kolesnyk       |      |      |      |      |
-| michael.pereverov     |      |   V  |   V  |      |
+| michael.pereverov     |  V   |   V  |   V  |      |
 | pavlo.ovcharenko      |      |      |      |      |
-| pavlo.teslenko        |  V   |   V  |      |      |
+| pavlo.teslenko        |  V   |   V  |   V  |  V   |
 | ruslan.pistriak       |      |      |      |      |
 | sashka.datsenko       |  V   |   V  |   V  |      |
 | serhii.karavan        |  V   |      |      |      |
