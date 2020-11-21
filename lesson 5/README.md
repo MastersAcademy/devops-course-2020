@@ -1,8 +1,8 @@
 # Задача:
 Створити docker-compose.yml в якому буде описано 3 контейнери:
 1. ruby, який запускає server.rb, для нього необхідно створити Dockerfile в якому поставляться sinatra(2.1.0), pg(0.18.4), redis(4.2.2) ([як ставити конкретні версії бібліотек рубі](https://stackoverflow.com/questions/17026441/how-to-install-a-specific-version-of-a-ruby-gem))
-2. postgres
-3. redis
+1. postgres
+1. redis
 
 Налаштувати доступ до бази через смінну DB, доступ до редісу через змінну CACHE
 
