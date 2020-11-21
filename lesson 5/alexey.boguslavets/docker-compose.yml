@@ -1,0 +1,29 @@
+version: '3.5'
+services:
+
+  ruby:
+    image: ruby
+    container_name: ruby
+    build: .
+    depends_on:
+      - pgdb
+      - redis
+    environment:
+      CACHE: 'redis://password@redis:6379/1'  
+      DB: 'postgresql://postgres:passw0rd@pgdb/postgres'
+    ports:
+      - 9000:4567
+    volumes:
+      - ./:/app
+    command: ruby /app/server.rb
+
+  pgdb:
+    image: postgres:9.6.5-alpine
+    container_name: pgdb
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'passw0rd'
+
+  redis:
+    image: redis:4-alpine    
+    container_name: redis
