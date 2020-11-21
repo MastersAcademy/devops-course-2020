@@ -25,7 +25,7 @@
 | ruslan.pistriak       |      |      |      |      |
 | sashka.datsenko       |  V   |   V  |   V  |      |
 | serhii.karavan        |  V   |      |      |      |
-| vitalii.kolesnyk      |  V   |      |      |      |
+| vitalii.kolesnyk      |  V   |   V  |      |      |
 | vladyslav.volkov      |  V   |   V  |   V  |      |
 | volodymyr.bezpalchuk  |  V   |   V  |   V  |      |
 
