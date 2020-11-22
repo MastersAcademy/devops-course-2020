@@ -2,14 +2,15 @@ version: '3.5'
 
 services:
   
-  ruby:
-    build: .
+  ruby:   
+    build: 
+      context: ../
+      dockerfile: ./sashka.datsenko/Dockerfile
     ports: 
       - 9000:4567
     environment: 
       DB: postgresql://postgres:testpass@postgres:5432
       CACHE: redis://:testpass@redis:6379
-    
     depends_on:
       - postgres
       - redis
