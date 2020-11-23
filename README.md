@@ -14,18 +14,18 @@
 | bogdan.safronov       |  V   |      |   V  |      |
 | bohdan.bezpoyasniy    |  V   |      |      |      |
 | dmytro.pereiaslovets  |  V   |   V  |   V  |      |
-| dmytro.vakulenko      |  V   |      |      |      |
+| dmytro.vakulenko      |  V   |   V  |      |      |
 | eugene.benkovskiy     |  V   |   V  |   V  |      |
-| nataliia.homberh      |  V   |   V  |   V  |      |
+| nataliia.homberh      |  V   |   V  |   V  |  V   |
 | jenia.tretiak         |  V   |      |      |      |
 | maksym.kolesnyk       |      |      |      |      |
 | michael.pereverov     |  V   |   V  |   V  |      |
 | pavlo.ovcharenko      |      |      |      |      |
 | pavlo.teslenko        |  V   |   V  |   V  |  V   |
 | ruslan.pistriak       |      |      |      |      |
-| sashka.datsenko       |  V   |   V  |   V  |      |
-| serhii.karavan        |  V   |      |      |      |
-| vitalii.kolesnyk      |  V   |      |      |      |
+| sashka.datsenko       |  V   |   V  |   V  |  V   |
+| serhii.karavan        |  V   |   V  |      |      |
+| vitalii.kolesnyk      |  V   |   V  |      |      |
 | vladyslav.volkov      |  V   |   V  |   V  |      |
 | volodymyr.bezpalchuk  |  V   |   V  |   V  |      |
 
