@@ -18,7 +18,7 @@ mkdir -p build/src && cp ../server.rb build/src/
 
 cd ./build
 
-envsubst < ".env.tmpl" > ".env"
+envsubst < ".env" > ".env.tmp" && mv .env.tmp .env
 
 docker build -f ./ruby/Dockerfile -t ruby_srv:latest .
 
