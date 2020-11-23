@@ -23,7 +23,7 @@
 | pavlo.ovcharenko      |      |      |      |      |
 | pavlo.teslenko        |  V   |   V  |   V  |  V   |
 | ruslan.pistriak       |      |      |      |      |
-| sashka.datsenko       |  V   |   V  |   V  |      |
+| sashka.datsenko       |  V   |   V  |   V  |  V   |
 | serhii.karavan        |  V   |      |      |      |
 | vitalii.kolesnyk      |  V   |   V  |      |      |
 | vladyslav.volkov      |  V   |   V  |   V  |      |
