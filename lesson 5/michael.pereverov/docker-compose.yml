@@ -1,43 +1,29 @@
 version: '3.5'
 services:
-  db:
+  postgres:
     image: postgres:9.6.5-alpine
-    container_name: ma-postgres
     restart: always
     env_file: .env
     volumes:
       - postgresql-data:/var/lib/postgresql/data/
-    networks:
-      - ma
 
   ruby:
     build:
       context: ../
       dockerfile: michael.pereverov/Dockerfile
-    container_name: ma-ruby
     restart: always
     depends_on:
-      - db
+      - postgres
       - redis
     env_file: .env
     ports:
       - "9000:4567"
-    networks:
-      - ma
 
   redis:
     image: redis:6.0.9-alpine
-    container_name: ma-redis
     restart: always
     command: redis-server --requirepass ${REDIS_PASSWORD}
     env_file: .env
-    # environment:
-    #   REDIS_PASSWORD: password
-    networks:
-      - ma
-
-networks:
-  ma:
 
 volumes:
   postgresql-data:
