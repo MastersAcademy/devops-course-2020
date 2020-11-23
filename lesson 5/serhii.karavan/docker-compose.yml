@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  Postgres:
+    image: postgres:9.6.5
+    environment:
+      POSTGRES_PASSWORD: 123456
+  Redis:
+    image: redis
+    restart: always
+  ruby:
+    build: .
+    ports:
+      - "9000:4567"
+    volumes:
+      - .:/serhii.karavan
+    depends_on: 
+      - Postgres
+      - Redis
+    environment:
+      DB: postgresql://postgres:123456@Postgres:5432
+      CACHE: redis://redis:6379
