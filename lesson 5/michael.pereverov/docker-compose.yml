@@ -11,14 +11,15 @@ services:
       - ma
 
   ruby:
-    image: ruby_srv:latest
+    build:
+      context: ../
+      dockerfile: michael.pereverov/Dockerfile
     container_name: ma-ruby
     restart: always
     depends_on:
       - db
       - redis
     env_file: .env
-
     ports:
       - "9000:4567"
     networks:
