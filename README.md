@@ -11,7 +11,7 @@
 | ---                   | ---  | ---  | ---  | ---  | ---  |
 | aleksandr.arabadzhy   |      |      |      |      |      |
 | alexey.boguslavets    |  V   |   V  |   V  |  V   |      |
-| bogdan.safronov       |  V   |      |   V  |      |      |
+| bogdan.safronov       |  V   |      |   V  |  V   |      |
 | bohdan.bezpoyasniy    |  V   |      |      |      |      |
 | dmytro.pereiaslovets  |  V   |   V  |   V  |  V   |      |
 | dmytro.vakulenko      |  V   |   V  |      |      |      |
