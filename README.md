@@ -10,7 +10,7 @@
 |                       | HW 1 | HW 3 | HW 4 | HW 5 | 
 | ---                   | ---  | ---  | ---  | ---  |
 | aleksandr.arabadzhy   |      |      |      |      |
-| alexey.boguslavets    |  V   |   V  |   V  |      |
+| alexey.boguslavets    |  V   |   V  |   V  |  V   |
 | bogdan.safronov       |  V   |      |   V  |      |
 | bohdan.bezpoyasniy    |  V   |      |      |      |
 | dmytro.pereiaslovets  |  V   |   V  |   V  |  V   |
