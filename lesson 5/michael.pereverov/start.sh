@@ -12,15 +12,18 @@ export DB="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${P
 
 export CACHE="redis://:${REDIS_PASSWORD}@${REDIS_HOST}:6379/0"
 
-cd ./docker
+rsync -r docker/ build/
+
+mkdir -p build/src && cp ../server.rb build/src/
+
+cd ./build
 
 envsubst < ".env.tmpl" > ".env"
 
-ln -s ../../server.rb ./ruby/server.rb
+docker build -f ./ruby/Dockerfile -t ruby_srv:latest .
 
-docker build -t ruby_srv:latest ./ruby
+docker-compose down
+docker-compose up -d 
 
-docker-compose stop
-docker-compose run -d 
-
-rm .env
+cd ..
+rm -r build/
