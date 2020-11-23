@@ -14,7 +14,7 @@ services:
     ports:
       - 9000:4567
     volumes:
-      - ./:/app
+      - ../:/app
     command: ruby /app/server.rb
 
   pgdb:
