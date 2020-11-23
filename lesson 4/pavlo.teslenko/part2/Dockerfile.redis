@@ -1,0 +1,6 @@
+FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y \ 
+    redis-server
+ENV REDIS_PASSWORD=password
+EXPOSE 6379/tcp
+ENTRYPOINT ["redis-server"]
