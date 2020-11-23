@@ -13,7 +13,7 @@
 | alexey.boguslavets    |  V   |   V  |   V  |      |
 | bogdan.safronov       |  V   |      |   V  |      |
 | bohdan.bezpoyasniy    |  V   |      |      |      |
-| dmytro.pereiaslovets  |  V   |   V  |   V  |      |
+| dmytro.pereiaslovets  |  V   |   V  |   V  |  V   |
 | dmytro.vakulenko      |  V   |   V  |      |      |
 | eugene.benkovskiy     |  V   |   V  |   V  |      |
 | nataliia.homberh      |  V   |   V  |   V  |  V   |
