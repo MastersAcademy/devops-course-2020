@@ -7,25 +7,25 @@
 Пока вы не нарушили этого правила доделывать и переписывать работы все еще можно :)
 
 
-|                       | HW 1 | HW 3 | HW 4 | HW 5 | 
-| ---                   | ---  | ---  | ---  | ---  |
-| aleksandr.arabadzhy   |      |      |      |      |
-| alexey.boguslavets    |  V   |   V  |   V  |  V   |
-| bogdan.safronov       |  V   |      |   V  |      |
-| bohdan.bezpoyasniy    |  V   |      |      |      |
-| dmytro.pereiaslovets  |  V   |   V  |   V  |  V   |
-| dmytro.vakulenko      |  V   |   V  |      |      |
-| eugene.benkovskiy     |  V   |   V  |   V  |      |
-| nataliia.homberh      |  V   |   V  |   V  |  V   |
-| jenia.tretiak         |  V   |      |      |      |
-| maksym.kolesnyk       |      |      |      |      |
-| michael.pereverov     |  V   |   V  |   V  |      |
-| pavlo.ovcharenko      |      |      |      |      |
-| pavlo.teslenko        |  V   |   V  |   V  |  V   |
-| ruslan.pistriak       |      |      |      |      |
-| sashka.datsenko       |  V   |   V  |   V  |  V   |
-| serhii.karavan        |  V   |   V  |      |      |
-| vitalii.kolesnyk      |  V   |   V  |      |      |
-| vladyslav.volkov      |  V   |   V  |   V  |      |
-| volodymyr.bezpalchuk  |  V   |   V  |   V  |      |
+|                       | HW 1 | HW 3 | HW 4 | HW 5 | HW 6 |
+| ---                   | ---  | ---  | ---  | ---  | ---  |
+| aleksandr.arabadzhy   |      |      |      |      |      |
+| alexey.boguslavets    |  V   |   V  |   V  |  V   |      |
+| bogdan.safronov       |  V   |      |   V  |      |      |
+| bohdan.bezpoyasniy    |  V   |      |      |      |      |
+| dmytro.pereiaslovets  |  V   |   V  |   V  |  V   |      |
+| dmytro.vakulenko      |  V   |   V  |      |      |      |
+| eugene.benkovskiy     |  V   |   V  |   V  |      |      |
+| nataliia.homberh      |  V   |   V  |   V  |  V   |      |
+| jenia.tretiak         |  V   |      |      |      |      |
+| maksym.kolesnyk       |      |      |      |      |      |
+| michael.pereverov     |  V   |   V  |   V  |  V   |      |
+| pavlo.ovcharenko      |      |      |      |      |      |
+| pavlo.teslenko        |  V   |   V  |   V  |  V   |      |
+| ruslan.pistriak       |      |      |      |      |      |
+| sashka.datsenko       |  V   |   V  |   V  |  V   |      |
+| serhii.karavan        |  V   |   V  |      |      |      |
+| vitalii.kolesnyk      |  V   |   V  |      |      |      |
+| vladyslav.volkov      |  V   |   V  |   V  |      |      |
+| volodymyr.bezpalchuk  |  V   |   V  |   V  |      |      |
 
