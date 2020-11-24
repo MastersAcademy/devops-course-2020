@@ -1,0 +1,25 @@
+version: '3.5'
+services:
+  ruby:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - database
+      - redis
+    ports:
+      - "9000:4567"
+    environment:
+      DB: postgresql://postgres:password@database:5432
+      CACHE: redis://:password@redis:6379
+
+  database:
+    image: postgres:9.6.5
+    environment:
+      POSTGRES_PASSWORD: password
+
+  redis:
+    image: redis
+    command: redis-server --requirepass password
+    environment:
+      REDIS_PASSWORD: password

@@ -1,0 +1,1 @@
+https://hub.docker.com/repository/docker/boguslavets/ma.devops.boguslavets 

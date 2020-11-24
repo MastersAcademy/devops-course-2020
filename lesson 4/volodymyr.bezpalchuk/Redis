@@ -1,0 +1,12 @@
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get install -y redis-server && \
+    mkdir /data && \
+    chown redis:redis /data
+
+VOLUME /data
+WORKDIR /data
+
+EXPOSE 6379
+
+CMD ["redis-server", "--protected-mode no"]
