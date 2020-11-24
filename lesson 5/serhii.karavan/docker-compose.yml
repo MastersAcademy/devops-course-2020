@@ -1,21 +1,20 @@
 version: "3.8"
 services:
-  Postgres:
+  postgres:
     image: postgres:9.6.5
     environment:
       POSTGRES_PASSWORD: 123456
-  Redis:
+  redis:
     image: redis
-    restart: always
   ruby:
-    build: .
     ports:
       - "9000:4567"
-    volumes:
-      - .:/serhii.karavan
+    build:
+      context: .
+      dockerfile: Dockerfile
     depends_on: 
-      - Postgres
-      - Redis
+      - postgres
+      - redis
     environment:
-      DB: postgresql://postgres:123456@Postgres:5432
+      DB: postgresql://postgres:123456@postgres:5432
       CACHE: redis://redis:6379
