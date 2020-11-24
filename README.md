@@ -27,5 +27,5 @@
 | serhii.karavan        |  V   |   V  |      |      |      |
 | vitalii.kolesnyk      |  V   |   V  |      |      |      |
 | vladyslav.volkov      |  V   |   V  |   V  |      |      |
-| volodymyr.bezpalchuk  |  V   |   V  |   V  |      |      |
+| volodymyr.bezpalchuk  |  V   |   V  |   V  |  V   |      |
 
