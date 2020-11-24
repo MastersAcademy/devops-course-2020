@@ -1,0 +1,25 @@
+version: '3.5'
+services:
+  ruby:
+    image: ruby    
+    build: .
+    depends_on:
+      - psql
+      - redis
+    environment:
+      CACHE: 'redis://redis:6379/1'  
+      DB: 'postgresql://postgres:dbpass@psql/postgres'
+    ports:
+      - 9000:4567
+    volumes:
+      - ../:/app
+    command: ruby /app/server.rb
+
+  psql:
+    image: postgres:9.6.5-alpine    
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'dbpass'
+
+  redis:
+    image: redis:4-alpine    
