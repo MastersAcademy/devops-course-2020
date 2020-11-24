@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - database
+      - redis
+    ports:
+      - "9000:4567"
+    environment:
+      DB: postgresql://postgres:db_password@database:5432
+      CACHE: redis://redis:6379
+
+  database:
+    image: postgres    
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: 'postgres'  
+      POSTGRES_PASSWORD: 'db_password'
+
+  redis:
+    image: redis
+
+volumes:
+  db_data:
