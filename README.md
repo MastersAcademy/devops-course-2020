@@ -24,7 +24,7 @@
 | pavlo.teslenko        |  V   |   V  |   V  |  V   |      |
 | ruslan.pistriak       |      |      |      |      |      |
 | sashka.datsenko       |  V   |   V  |   V  |  V   |      |
-| serhii.karavan        |  V   |   V  |      |      |      |
+| serhii.karavan        |  V   |   V  |      |  V   |      |
 | vitalii.kolesnyk      |  V   |   V  |      |  V   |      |
 | vladyslav.volkov      |  V   |   V  |   V  |      |      |
 | volodymyr.bezpalchuk  |  V   |   V  |   V  |  V   |      |
