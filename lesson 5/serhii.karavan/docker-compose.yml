@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:9.6.5
+    environment:
+      POSTGRES_PASSWORD: 123456
+  redis:
+    image: redis
+  ruby:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "ruby server.rb"
+    ports:
+      - "9000:4567"
+    working_dir: /app
+    volumes:
+      - ..:/app
+    depends_on: 
+      - postgres
+      - redis
+    environment:
+      DB: postgresql://postgres:123456@postgres:5432
+      CACHE: redis://redis:6379
