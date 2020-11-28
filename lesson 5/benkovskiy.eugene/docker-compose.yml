@@ -4,8 +4,8 @@ services:
   #Runby server setup:
   ruby:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ../
+      dockerfile: ./benkovskiy.eugene/Dockerfile
     
     #running sequence:
     depends_on:
