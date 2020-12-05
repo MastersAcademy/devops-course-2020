@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod                                            
+metadata:
+  name: kube-h6-p1
+  namespace: pavlo-teslenko
+  labels:
+    app: pod
+spec:                                                
+  containers:
+    - image: paullol/ma.devops.teslenko:question1
+      name: myapp-1
+      env:
+      - name: PORT
+        valueFrom:
+          secretKeyRef:
+            name: port
+            key: PORT                            
+  restartPolicy: Never
+
+
