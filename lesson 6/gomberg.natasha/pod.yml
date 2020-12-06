@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: may-pod
+  namespace: nataliia-homberh
+  labels:
+    app: pod
+spec:
+  containers:
+  - name: my-container
+    image: natashka73/ma.devops.gomberg:natasha_gomberg
+    envFrom:
+      - configMapRef:
+          name: my-port
+  restartPolicy: Never
