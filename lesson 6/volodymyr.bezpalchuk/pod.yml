@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod                                            
+metadata:
+  name: homework-6
+  namespace: volodymyr-bezpalchuk
+  labels:
+    app: pod-bezpalchuk
+spec:                                                
+  containers:
+    - name: myapp
+      image: bezpalchukv/ma.devops.bezpalchuk:node-app  
+      env:
+      - name: PORT
+        valueFrom:
+          secretKeyRef:
+            name: port
+            key: PORT                            
+  restartPolicy: Never
