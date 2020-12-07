@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-private 
+  namespace: dmytro-pereiaslovets
+  labels:
+    app: pod
+spec:
+  containers:
+  - name: node-private-app
+    image: dimonty/ma.devops.pereiaslovets.private:latest
+    env:
+    - name: PORT
+      valueFrom:
+        secretKeyRef:
+          name: user-secret
+          key: PORT
+  imagePullSecrets:
+  - name: dockerlogin  
+  restartPolicy: Never
