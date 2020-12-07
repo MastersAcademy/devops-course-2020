@@ -13,9 +13,9 @@
 | alexey.boguslavets        |  V   |   V  |   V  |  V   |      |      |    
 | bogdan.safronov           |  V   |      |   V  |  V   |      |      |
 | ~~bohdan.bezpoyasniy~~    |  V   |      |      |      |      |      |
-| dmytro.pereiaslovets      |  V   |   V  |   V  |  V   |      |      |
+| dmytro.pereiaslovets      |  V   |   V  |   V  |  V   |  V   |      |
 | dmytro.vakulenko          |  V   |   V  |      |      |      |      |
-| eugene.benkovskiy         |  V   |   V  |   V  |  V   |      |      |
+| eugene.benkovskiy         |  V   |   V  |   V  |  V   |  V   |      |
 | nataliia.homberh          |  V   |   V  |   V  |  V   |      |      |
 | ~~jenia.tretiak~~         |  V   |      |      |      |      |      |
 | ~~maksym.kolesnyk~~       |      |      |      |      |      |      |
@@ -23,9 +23,9 @@
 | ~~pavlo.ovcharenko~~      |      |      |      |      |      |      |
 | pavlo.teslenko            |  V   |   V  |   V  |  V   |      |      |
 | ~~ruslan.pistriak~~       |      |      |      |      |      |      |
-| sashka.datsenko           |  V   |   V  |   V  |  V   |      |      |
+| sashka.datsenko           |  V   |   V  |   V  |  V   |  V   |      |
 | serhii.karavan            |  V   |   V  |      |  V   |      |      |
 | vitalii.kolesnyk          |  V   |   V  |      |  V   |      |      |
 | vladyslav.volkov          |  V   |   V  |   V  |  V   |      |      |
-| volodymyr.bezpalchuk      |  V   |   V  |   V  |  V   |      |      |
+| volodymyr.bezpalchuk      |  V   |   V  |   V  |  V   |  V   |      |
 
