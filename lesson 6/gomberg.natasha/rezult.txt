@@ -1,0 +1,2 @@
+kubectl -n nataliia-homberh exec -it may-pod --container my-container -- curl http://localhost:8080
+

@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-pod 
+  namespace: dmytro-pereiaslovets
+  labels:
+    app: pod
+spec:
+  containers:
+  - name: node-app
+    image: dimonty/ma.devops.pereiaslovets:latest
+    env:
+    - name: PORT
+      valueFrom:
+        secretKeyRef:
+          name: user-secret
+          key: PORT
+  restartPolicy: Never

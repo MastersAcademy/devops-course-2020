@@ -1,0 +1,36 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: namespace-access
+rules:
+  - apiGroups: ["", "apps", "autoscaling", "batch"]
+    resources:
+      - pods
+      - pods/log
+      - pods/exec
+      - pods/attach
+      - pods/portforward
+      - configmaps
+      - events
+      - podtemplates
+      - replicationcontrollers
+      - secrets
+      - services
+      - daemonsets
+      - deployments
+      - replicasets
+      - statefulsets
+      - horizontalpodautoscalers
+      - cronjobs
+      - jobs
+      - ingresses
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: general-read-only
+rules:
+  - apiGroups: [""]
+    resources: ["nodes"]
+    verbs: ["get", "watch", "list"]
