@@ -15,8 +15,8 @@
 | ~~bohdan.bezpoyasniy~~    |  V   |      |      |      |      |      |
 | dmytro.pereiaslovets      |  V   |   V  |   V  |  V   |  V   |      |
 | dmytro.vakulenko          |  V   |   V  |      |      |      |      |
-| eugene.benkovskiy         |  V   |   V  |   V  |  V   |  V   |      |
-| nataliia.homberh          |  V   |   V  |   V  |  V   |      |      |
+| eugene.benkovskiy         |  V   |   V  |   V  |  V   |      |      |
+| nataliia.homberh          |  V   |   V  |   V  |  V   |  V   |      |
 | ~~jenia.tretiak~~         |  V   |      |      |      |      |      |
 | ~~maksym.kolesnyk~~       |      |      |      |      |      |      |
 | michael.pereverov         |  V   |   V  |   V  |  V   |      |      |
