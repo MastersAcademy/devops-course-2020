@@ -13,3 +13,6 @@ spec:
         - configMapRef:
             name: app
   restartPolicy: Never
+  imagePullSecrets:
+  - name: dockerlogin  
+  restartPolicy: Never
