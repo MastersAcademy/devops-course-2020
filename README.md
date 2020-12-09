@@ -10,7 +10,7 @@
 |                           | HW 1 | HW 3 | HW 4 | HW 5 | HW 7 | HW 8 |
 | ---                       | ---  | ---  | ---  | ---  | ---  | ---  |
 | aleksandr.arabadzhy       |      |      |      |      |      |      |
-| alexey.boguslavets        |  V   |   V  |   V  |  V   |      |      |    
+| alexey.boguslavets        |  V   |   V  |   V  |  V   |  V   |      |    
 | bogdan.safronov           |  V   |      |   V  |  V   |      |      |
 | ~~bohdan.bezpoyasniy~~    |  V   |      |      |      |      |      |
 | dmytro.pereiaslovets      |  V   |   V  |   V  |  V   |  V   |      |
@@ -26,6 +26,6 @@
 | sashka.datsenko           |  V   |   V  |   V  |  V   |  V   |      |
 | serhii.karavan            |  V   |   V  |      |  V   |      |      |
 | vitalii.kolesnyk          |  V   |   V  |      |  V   |      |      |
-| vladyslav.volkov          |  V   |   V  |   V  |  V   |      |      |
+| vladyslav.volkov          |  V   |   V  |   V  |  V   |  V   |      |
 | volodymyr.bezpalchuk      |  V   |   V  |   V  |  V   |  V   |      |
 
