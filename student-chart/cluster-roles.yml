@@ -18,6 +18,7 @@ rules:
       - services
       - daemonsets
       - deployments
+      - deployments/scale
       - replicasets
       - statefulsets
       - horizontalpodautoscalers
