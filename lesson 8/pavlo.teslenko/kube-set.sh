@@ -1,0 +1,1 @@
+kubectl set image deploy/appjs *=paullol/ma.devops.teslenko.private:2
