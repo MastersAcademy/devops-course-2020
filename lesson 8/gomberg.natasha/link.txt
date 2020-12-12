@@ -1,0 +1,2 @@
+kubectl port-forward pod/my-deployment-6874d7fd5f-f8pn5 8080:8080
+
