@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bodji-pod
+  namespace: bogdan-safronov
+  labels:
+    app: pod
+spec:
+  containers:
+    - name: bodji-cont
+      image: bodji/ma.devops.safronov
+      env:
+        - name: PORT
+          valueFrom:
+            secretKeyRef:
+              name: secret-port
+              key: PORT
+  restartPolicy: Never
+
