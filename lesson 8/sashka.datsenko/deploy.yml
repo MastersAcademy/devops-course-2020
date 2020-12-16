@@ -20,5 +20,3 @@ spec:
           resources: 
             requests:
               memory: 75M
-     
- 
