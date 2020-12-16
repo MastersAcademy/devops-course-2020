@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app
+  labels:
+    app: web-app
+spec:
+  selector:
+    matchLabels:
+      app: web-app
+  template:
+    metadata:
+      labels:
+        app: web-app
+    spec:
+      containers:
+        - name: web-app
+          image: sashok15/ma.devops.datsenko@sha256:69ff16181f9a38634bdec6ab7b7efe8342b53f57a316e573c640e4a890baea6e
+          imagePullPolicy: Always
+          resources: 
+            requests:
+              memory: 75M
+     
+ 
