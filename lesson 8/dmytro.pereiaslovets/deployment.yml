@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: dockerlogin
+  namespace: dmytro-pereiaslovets
+data:
+  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CgkJCSJhdXRoIjogIlpHbHRiMjUwZVRwU1oySTNNemhtYURFNU9UQT0iCgkJfQoJfSwKCSJIdHRwSGVhZGVycyI6IHsKCQkiVXNlci1BZ2VudCI6ICJEb2NrZXItQ2xpZW50LzE5LjAzLjEzIChsaW51eCkiCgl9Cn0=
+type: kubernetes.io/dockerconfigjson
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-private-app
+  namespace: dmytro-pereiaslovets
+spec:
+  selector:
+    matchLabels:
+      app: node-private-app
+  template:
+    metadata:
+      labels:
+        app: node-private-app
+    spec:
+      containers:
+        - name: node-private-app
+          image: dimonty/ma.devops.pereiaslovets.private:latest
+          imagePullPolicy: Always
+          env:
+          - name: PORT
+            valueFrom:
+              secretKeyRef:
+                name: user-secret
+                key: PORT
+          resources: 
+            requests:
+              memory: 75M
+      imagePullSecrets:
+        - name: dockerlogin 
