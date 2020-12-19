@@ -1,0 +1,1 @@
+kubectl set image deploy/homework-8 *=bezpalchukv/ma.devops.bezpalchuk:node_app_release2

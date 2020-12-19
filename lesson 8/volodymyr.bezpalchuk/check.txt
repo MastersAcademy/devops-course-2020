@@ -1,0 +1,1 @@
+kubectl port-forward homework-8-6d85b7fcdf-5jzdp 8080:3030
