@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-port
+type: Opaque
+stringData:
+  PORT: "8080"  
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: my-deployment
+  template : 
+    metadata:
+      labels:
+        app: my-deployment
+    spec:
+      containers:
+        - name: my-container
+          image: natashka73/ma.devops.gomberg:natasha_gomberg
+          imagePullPolicy: Always
+          envFrom:
+          - secretRef:
+              name: my-port              
+          resources:
+            requests:
+              memory: 75M
+            limits:
+              cpu: 0.1
+      imagePullSecrets:
+      - name: regcred
+
+
