@@ -1,0 +1,84 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ghost
+data:
+  ghost.ini: |
+    [ghost_net]
+    url = http://3.122.159.165:30127
+    [paths]
+    data = /var/www/ghost/data
+    content = /var/www/ghost/content
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: ghost
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 2368
+      nodePort: 30127
+  selector:
+    app: ghost
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ghost
+spec:
+  selector:
+    matchLabels:
+      app: ghost
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+         app: ghost
+    spec:
+      initContainers:
+        - name: ghost-init
+          image: busybox:1.31.1
+          command: ["chown", "-R", "472:472", "/var/www/ghost"]
+          volumeMounts:
+            - name: content
+              mountPath: /var/www/ghost
+        - name: sleep
+          image: busybox:1.31.1
+          command: ["sleep", "60"]
+      containers:
+        - name: ghost
+          image: ghost
+          ports:
+            - containerPort: 2368
+          readinessProbe: 
+            httpGet:
+              path: /
+              port: 2368
+            initialDelaySeconds: 60
+            periodSeconds: 5
+          livenessProbe: 
+            httpGet:
+              path: /
+              port: 2368
+            initialDelaySeconds: 60
+            periodSeconds: 5
+          volumeMounts:
+            - name: config
+              mountPath: /etc/ghost/ghost.ini
+              subPath: ghost.ini
+            - name: content
+              mountPath: /var/www/ghost
+
+      volumes:
+        - name: config
+          configMap:
+            name: ghost
+        - name: content
+          hostPath:
+            path: /content/nata
+      nodeSelector:
+        kubernetes.io/hostname: ip-172-31-1-88
