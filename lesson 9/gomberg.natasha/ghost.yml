@@ -40,12 +40,6 @@ spec:
          app: ghost
     spec:
       initContainers:
-        - name: ghost-init
-          image: busybox:1.31.1
-          command: ["chown", "-R", "0:0", "/var/www/ghost"]
-          volumeMounts:
-            - name: content
-              mountPath: /var/www/ghost
         - name: sleep
           image: busybox:1.31.1
           command: ["sleep", "60"]
