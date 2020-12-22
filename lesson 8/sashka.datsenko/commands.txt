@@ -1,0 +1,2 @@
+kubectl port-forward web-app-5fd6f7d4-h6qb6 8080:8080 
+kubectl set image deploy/web-app *=sashok15/ma.devops.datsenko:2.0
