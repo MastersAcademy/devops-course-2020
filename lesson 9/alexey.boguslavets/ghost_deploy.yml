@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ghcfg
+data:
+  VOLUME_GHOST: /var/lib/ghost/content
+  url: http://18.198.222.171:30300
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ghost
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 2368
+      nodePort: 30300
+  selector:
+    app: ghost
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ghost
+spec:
+  selector:
+    matchLabels:
+      app: ghost
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: ghost
+    spec:
+      containers:
+      - name: ghost
+        image: ghost
+        ports:
+        - containerPort: 2368
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 2368
+          initialDelaySeconds: 60
+          periodSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 2368
+          initialDelaySeconds: 60
+          periodSeconds: 5
+        envFrom:
+          - configMapRef:
+              name: ghcfg
+        volumeMounts:
+          - name: ghost-content
+            mountPath: /var/lib/ghost/content
+      volumes:
+        - name: ghost-content
+          hostPath:
+            path: /var/lib/ghost/content
+      nodeSelector:
+        kubernetes.io/hostname: ip-172-31-15-26 
+
