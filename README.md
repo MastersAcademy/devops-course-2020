@@ -14,7 +14,7 @@
 | bogdan.safronov           |  V   |      |   V  |  V   |  V   |      |      |
 | ~~bohdan.bezpoyasniy~~    |  V   |      |      |      |      |      |      |
 | dmytro.pereiaslovets      |  V   |   V  |   V  |  V   |  V   |  V   |  V   |
-| dmytro.vakulenko          |  V   |   V  |      |      |      |      |      |
+| ~~dmytro.vakulenko~~      |  V   |   V  |      |      |      |      |      |
 | eugene.benkovskiy         |  V   |   V  |   V  |  V   |      |      |      |
 | nataliia.homberh          |  V   |   V  |   V  |  V   |  V   |  V   |  V   |
 | ~~jenia.tretiak~~         |  V   |      |      |      |      |      |      |
