@@ -1,0 +1,20 @@
+aws ec2 create-key-pair --key-name 'snail73-cliphpAdmin-eu-north-1' --query 'KeyMaterial' --output text > snail73-cliphpAdmin-eu-north-1.pem
+
+aws ec2 create-security-group --group-name cliphpAdmin-sg --description "cliphpAdmin-sg"
+
+aws ec2 authorize-security-group-ingress --group-id sg-0cd4180bb067c44da --protocol tcp --port 80 --cidr 0.0.0.0/0
+
+aws ec2 authorize-security-group-ingress --group-id sg-0cd4180bb067c44da --protocol tcp --port 22 --cidr 0.0.0.0/0
+
+aws ec2 run-instances --image-id ami-09b44b5f46219ee86 --count 1 --instance-type t3.micro --credit-specification CpuCredits=standard --key-name snail73-cliphpAdmin-eu-north-1 --security-group-ids sg-0cd4180bb067c44da --tag-specifications 'ResourceType=instance,Tags={Key=Name,Value=cliphpAdmin}'
+
+aws ec2 create-security-group --group-name cliphpAdmin-rds --description "cliphpAdmin-rds" --vpc-id vpc-bf8b31d6
+
+aws ec2 authorize-security-group-ingress --group-id sg-0400e644d8ca2c34b --protocol tcp --port 3306 --source-group sg-0cd4180bb067c44da
+
+aws rds create-db-instance --engine mysql --engine-version 8.0.20 --db-instance-identifier cliphpAdmin-prod --allocated-storage 20 --db-instance-class db.t3.micro --backup-retention-period 0 --vpc-security-group-ids sg-0400e644d8ca2c34b --db-subnet-group default-vpc-bf8b31d6 --master-username Admin --master-user-password sgpwIuPH9GWcuDjumbVd1M9mv1DS24 --auto-minor-version-upgrade
+
+ip=13.49.49.132
+user=Admin
+
+
