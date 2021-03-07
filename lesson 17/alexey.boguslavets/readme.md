@@ -43,5 +43,8 @@ aws rds create-db-instance --engine mysql \
 --auto-minor-version-upgrade
 
 user: root
-http://ec2-13-51-72-124.eu-north-1.compute.amazonaws.com/
 http://13.51.72.124/
+http://ec2-13-51-72-124.eu-north-1.compute.amazonaws.com/
+
+project design architecture
+https://miro.com/app/board/o9J_lQqNMLY=/
